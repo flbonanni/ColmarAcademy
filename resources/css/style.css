@@ -1,0 +1,154 @@
+/* universal */
+body {
+  background-color: lightgrey;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.quote {
+  font-size: 0.75rem;
+  padding: 32px 0px;
+}
+
+.button {
+  background-color: darkgrey;
+  padding: 8px;
+  text-align: center;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.left {
+  width: 60%;
+}
+
+.left img {
+  display: block;
+  padding: 32px 24px;
+  width: calc(100% - 48px);
+}
+
+.right {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.right .content {
+  padding: 0px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* header */
+header {
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+
+header .content {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  padding: 0px 24px;
+  align-items: center;
+}
+
+header .content a {
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  flex: 1;
+}
+
+header nav {
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav li {
+  padding-left: 16px;
+}
+
+header img {
+  height: 32px;
+}
+
+nav a {
+  vertical-align: bottom;
+}
+
+/* banner */
+.banner {
+  display: flex;
+}
+
+.banner h3 {
+  padding: 24px 0px;
+}
+
+/* testimonial */
+.testimonial {
+  background-color: white;
+  display: flex;
+}
+
+.testimonial .left .text {
+  padding: 0px 24px;
+}
+
+.testimonial h1 {
+  padding-bottom: 24px;
+}
+
+.testimonial .right {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  border-left: 1px solid;
+  border-left-color: lightgrey;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid;
+  border-bottom-color: lightgrey;
+}
+
+.item img {
+  align-self: center;
+  padding: 16px;
+  height: auto;
+  width: calc(35% - 11.2px);
+}
+
+.item .caption {
+  align-self: center;
+}
+
+/* catalog */
+
+/* thesis */
+
+/* footer */
