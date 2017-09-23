@@ -107,6 +107,46 @@ nav a {
   vertical-align: bottom;
 }
 
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .desktop .logo {
+    display: none;
+  }
+
+  header {
+    height: 64px;
+    background-color: white;
+  }
+
+  header .mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  header .content {
+    padding: .5rem 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+}
+
 /* banner */
 .banner {
   display: flex;
@@ -115,6 +155,52 @@ nav a {
 
 .banner h3 {
   padding: 24px 0px;
+}
+
+@media only screen and (max-width: 480px) {
+  .left {
+    width: 100%;
+  }
+
+  .banner {
+    display: block;
+  }
+
+  .banner img {
+    padding: 0px;
+    width: 100%;
+  }
+
+  .banner .right {
+    width: calc(100% - 32px);
+    padding: 16px;
+  }
+
+  .right .content {
+    padding: 0px 0px;
+  }
+
+  .right h1 {
+    padding: 16px 0px;
+  }
+
+  .right h3 {
+    padding-top: 8px;
+    padding-bottom: 24px;
+  }
+
+  .button {
+    align-self: center;
+    width: 80%;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  .button a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 /* testimonial */
@@ -129,6 +215,12 @@ nav a {
 
 .testimonial h1 {
   padding-bottom: 24px;
+}
+
+@media only screen and (max-width: 480px) {
+  .testimonial .desktop {
+    display: none;
+  }
 }
 
 .testimonial .right {
@@ -157,8 +249,51 @@ nav a {
   align-self: center;
 }
 
-.three {
-  background-color: lightgrey;
+.testimonial .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .testimonial .desktop {
+    display: none;
+  }
+
+  .testimonial .mobile {
+    display: block;
+    padding: 0px;
+    padding-bottom: 14px;
+  }
+
+  .caption {
+    padding: 0px 32px;
+    margin-bottom: 18px;
+  }
+
+  .item img {
+    width: calc(100% - 32px);
+    display: block;
+  }
+
+  .item .caption {
+    align-self: center;
+    display: block;
+  }
+
+  .testimonial .item {
+    border-bottom: 0px;
+  }
+
+  .right h3 {
+    padding: 0px;
+  }
+
+  .right p {
+    padding: 8px 0px;
+  }
+
+  .testimonial .right {
+    width: 100%;
+  }
 }
 
 /* catalog */
@@ -204,6 +339,17 @@ nav a {
   text-align: center;
 }
 
+@media only screen and (max-width: 480px) {
+  .catalog {
+    background-color: white;
+  }
+
+  .catalog h1 {
+    padding-top: 32px;
+    padding-bottom: 8px;
+  }
+}
+
 .catalog .course {
   padding: 16px;
 }
@@ -212,6 +358,35 @@ nav a {
   padding: 8px 0px;
 }
 
+.catalog .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .catalog .desktop {
+    display: none;
+  }
+
+  .catalog {
+    border-top: 1px solid;
+    border-top-color: lightgrey;
+  }
+
+  .catalog .mobile {
+    display: block;
+  }
+
+  .cards-holder .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .element {
+    background-color: lightgrey;
+    padding: 16px;
+    margin-top: 8px;
+  }
+}
 
 /* thesis */
 .thesis {
@@ -256,8 +431,32 @@ nav a {
   align-self: center;
 }
 
-.three {
-  background-color: lightgrey;
+.thesis .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .thesis .desktop {
+    display: none;
+  }
+
+  .thesis .mobile {
+    border-top: 1px solid;
+    border-top-color: lightgrey;
+  }
+
+  .thesis .mobile {
+    display: block;
+  }
+
+  .thesis h1 {
+    padding-bottom: 16px;
+  }
+
+  .thesis video {
+    width: 100%;
+    padding-bottom: 24px;
+  }
 }
 
 /* footer */
@@ -266,8 +465,20 @@ footer {
   background-color: white;
   padding: 16px 24px;
   border-top: 1px solid;
-  border-left-color: lightgrey;
+  border-top-color: lightgrey;
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 480px) {
+  footer .desktop {
+    display: none;
+  }
+
+  footer {
+    border-top: 0px;
+    padding: 16px 24px;
+    margin-top: 0px;
+  }
 }
