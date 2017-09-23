@@ -1,6 +1,6 @@
 /* universal */
 body {
-  background-color: lightgrey;
+  background-color: white;
 }
 
 html {
@@ -35,8 +35,17 @@ h3 {
 }
 
 .left img {
-  display: block;
   padding: 32px 24px;
+}
+
+.left video {
+  padding: 0px 24px;
+  padding-bottom: 24px;
+}
+
+.left img,
+video {
+  display: block;
   width: calc(100% - 48px);
 }
 
@@ -101,6 +110,7 @@ nav a {
 /* banner */
 .banner {
   display: flex;
+  background-color: lightgrey;
 }
 
 .banner h3 {
@@ -129,7 +139,7 @@ nav a {
   border-left-color: lightgrey;
 }
 
-.item {
+.testimonial .item {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid;
@@ -147,8 +157,117 @@ nav a {
   align-self: center;
 }
 
+.three {
+  background-color: lightgrey;
+}
+
 /* catalog */
+.catalog {
+  padding-bottom: 32px;
+  background-color: lightgrey;
+}
+
+.cards-holder {
+  display: flex;
+  padding: 0px 72px;
+  flex-direction: column;
+}
+
+.first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.second-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.onetwo {
+  margin-right: 32px;
+}
+
+.card {
+  background-color: white;
+  width: calc(33% - 69.33px);
+}
+
+.catalog img {
+  width: 100%;
+}
+
+.catalog h1 {
+  padding: 32px 0px;
+  text-align: center;
+}
+
+.catalog .course {
+  padding: 16px;
+}
+
+.catalog .courses {
+  padding: 8px 0px;
+}
+
 
 /* thesis */
+.thesis {
+  background-color: white;
+}
+
+.left-right {
+  display: flex;
+}
+
+.thesis .left .text {
+  padding: 0px 24px;
+}
+
+.thesis h1 {
+  padding: 32px 0px;
+  text-align: center;
+}
+
+.thesis p {
+  padding-top: 8px;
+}
+
+.thesis .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis .item {
+  display: flex;
+  flex-direction: row;
+}
+
+.thesis .item img {
+  align-self: center;
+  padding: 16px;
+  height: auto;
+  width: calc(35% - 11.2px);
+}
+
+.item .caption {
+  align-self: center;
+}
+
+.three {
+  background-color: lightgrey;
+}
 
 /* footer */
+footer {
+  margin-top: 32px;
+  background-color: white;
+  padding: 16px 24px;
+  border-top: 1px solid;
+  border-left-color: lightgrey;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
