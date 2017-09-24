@@ -1,8 +1,8 @@
 /* universal */
 body {
   background-color: white;
-  font-family: "Open Sans", sans-serif;
   color: #2e3d49;
+  font-family: "Open Sans", sans-serif;
 }
 
 html {
@@ -19,31 +19,31 @@ h3 {
 
 .quote {
   font-size: 0.75rem;
-  padding: 32px 0px;
+  padding: 32px 0;
 }
 
 .button {
   background-color: hsl(0, 0%, 92%);
+  border-radius: 8px;
+  color: hsl(222, 100%, 73%);
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 1.4px;
   padding: 15px;
   text-align: center;
-  color: hsl(222, 100%, 73%);
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 0.85rem;
-  letter-spacing: 1.4px;
 }
 
 .button:hover {
-  color: hsl(196, 100%, 58%);
   background-color: white;
-  transition: 200ms ease-in 0s;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.18);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+  color: hsl(196, 100%, 58%);
   margin-top: -1px;
+  transition: 200ms ease-in 0s;
 }
 
 a {
-  text-decoration: none;
   align-self: center;
+  text-decoration: none;
 }
 
 .strong {
@@ -55,13 +55,13 @@ a {
 }
 
 .left img {
-  margin: 32px 24px;
   border-radius: 50px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.20);
+  margin: 32px 24px;
 }
 
 .left video {
-  padding: 0px 24px;
+  padding: 0 24px;
   padding-bottom: 24px;
 }
 
@@ -72,31 +72,31 @@ video {
 }
 
 .right {
-  width: 40%;
-  display: flex;
   align-items: center;
+  display: flex;
+  width: 40%;
 }
 
 .right .content {
-  padding: 0px 24px;
   display: flex;
   flex-direction: column;
+  padding: 0 24px;
 }
 
 /* header */
 header {
-  width: 100%;
   align-items: center;
   display: flex;
+  width: 100%;
 }
 
 header .content {
-  height: 64px;
-  width: 100%;
-  display: flex;
-  background-color: white;
-  padding: 0px 24px;
   align-items: center;
+  background-color: white;
+  display: flex;
+  height: 64px;
+  padding: 0 24px;
+  width: 100%;
 }
 
 .logo .purple {
@@ -112,9 +112,9 @@ header .content {
 }
 
 header .content a {
-  display: flex;
   align-items: center;
   color: hsl(196, 100%, 58%);
+  display: flex;
   text-decoration: none;
 }
 
@@ -124,9 +124,6 @@ header .content a:hover {
 
 header .logo {
   flex: 1;
-}
-
-header nav {
 }
 
 header nav ul {
@@ -159,14 +156,14 @@ header .mobile {
   }
 
   header {
-    height: 64px;
     background-color: white;
+    height: 64px;
   }
 
   header .mobile {
     display: flex;
-    width: 100%;
     justify-content: space-around;
+    width: 100%;
   }
 
   header .content {
@@ -174,9 +171,9 @@ header .mobile {
   }
 
   header .mobile ul {
+    align-items: center;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     width: 100%;
   }
 
@@ -189,11 +186,16 @@ header .mobile {
 .banner {
   display: flex;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a5ffe2+0,2ac5ee+25,77a0ff+50,9e3ee2+75,e968b4+99 */
-background: rgb(165,255,226); /* Old browsers */
-background: -moz-linear-gradient(-45deg, rgba(165,255,226,1) 0%, rgba(42,197,238,1) 25%, rgba(119,160,255,1) 50%, rgba(158,62,226,1) 75%, rgba(233,104,180,1) 99%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, rgba(165,255,226,1) 0%,rgba(42,197,238,1) 25%,rgba(119,160,255,1) 50%,rgba(158,62,226,1) 75%,rgba(233,104,180,1) 99%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, rgba(165,255,226,1) 0%,rgba(42,197,238,1) 25%,rgba(119,160,255,1) 50%,rgba(158,62,226,1) 75%,rgba(233,104,180,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5ffe2', endColorstr='#e968b4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: rgb(165,255,226);
+ /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(165,255,226,1) 0%, rgba(42,197,238,1) 25%, rgba(119,160,255,1) 50%, rgba(158,62,226,1) 75%, rgba(233,104,180,1) 99%);
+ /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(165,255,226,1) 0%,rgba(42,197,238,1) 25%,rgba(119,160,255,1) 50%,rgba(158,62,226,1) 75%,rgba(233,104,180,1) 99%);
+ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(165,255,226,1) 0%,rgba(42,197,238,1) 25%,rgba(119,160,255,1) 50%,rgba(158,62,226,1) 75%,rgba(233,104,180,1) 99%);
+ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5ffe2', endColorstr='#e968b4',GradientType=1 );
+ /* IE6-9 fallback on horizontal gradient */;
 }
 
 .banner h1,
@@ -208,7 +210,7 @@ h3 {
 }
 
 .banner h3 {
-  padding: 24px 0px;
+  padding: 24px 0;
 }
 
 @media only screen and (max-width: 480px) {
@@ -221,50 +223,50 @@ h3 {
   }
 
   .banner img {
-    padding: 0px;
-    width: 100%;
-    border-radius: 0px;
+    border-radius: 0;
     box-shadow: none;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 
   .banner .right {
-    width: calc(100% - 32px);
     padding: 16px;
+    width: calc(100% - 32px);
   }
 
   .right .content {
-    padding: 0px 0px;
+    padding: 0 0;
   }
 
   .right h1 {
-    padding: 16px 0px;
+    padding: 16px 0;
   }
 
   .right h3 {
-    padding-top: 8px;
     padding-bottom: 24px;
+    padding-top: 8px;
   }
 
   .button {
     align-self: center;
-    width: 80%;
-    font-weight: bold;
-    margin-top: 24px;
-    margin-bottom: 16px;
-    color: white;
-    text-decoration: none;
     color: hsl(222, 100%, 73%);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 16px;
+    margin-top: 24px;
+    text-decoration: none;
+    width: 80%;
   }
 
-    .button:hover {
-      color: hsl(196, 100%, 58%);
-      background-color: white;
-      transition: 200ms ease-in 0s;
-      box-shadow: 0px 2px 4px rgba(0,0,0,0.18);
-      margin-top: 24px;
-      margin-bottom: 16px;
-    }
+  .button:hover {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+    color: hsl(196, 100%, 58%);
+    margin-bottom: 16px;
+    margin-top: 24px;
+    transition: 200ms ease-in 0s;
+  }
 }
 
 
@@ -275,7 +277,7 @@ h3 {
 }
 
 .testimonial .left .text {
-  padding: 0px 24px;
+  padding: 0 24px;
 }
 
 .testimonial h1 {
@@ -306,27 +308,20 @@ h3 {
   display: flex;
   flex-direction: column;
   padding-top: 16px;
-  border-left: 1px solid;
-  border-left-color: lightgrey;
 }
 
 .testimonial .item {
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid;
-  border-bottom-color: lightgrey;
-}
-
-.testimonial .item:hover {
 }
 
 .item img {
   align-self: center;
-  margin: 16px;
-  height: auto;
-  width: calc(35% - 11.2px);
   border-radius: 30px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.20);
+  height: auto;
+  margin: 16px;
+  width: calc(35% - 11.2px);
 }
 
 .item .caption {
@@ -344,18 +339,18 @@ h3 {
 
   .testimonial .mobile {
     display: block;
-    padding: 0px;
     padding-bottom: 14px;
+    padding: 0;
   }
 
   .caption {
-    padding: 0px 32px;
     margin-bottom: 18px;
+    padding: 0 32px;
   }
 
   .item img {
-    width: calc(100% - 32px);
     display: block;
+    width: calc(100% - 32px);
   }
 
   .item .caption {
@@ -364,15 +359,15 @@ h3 {
   }
 
   .testimonial .item {
-    border-bottom: 0px;
+    border-bottom: 0;
   }
 
   .right h3 {
-    padding: 0px;
+    padding: 0;
   }
 
   .right p {
-    padding: 8px 0px;
+    padding: 8px 0;
   }
 
   .testimonial .right {
@@ -383,18 +378,23 @@ h3 {
 /* catalog */
 .catalog {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a5ffe2+0,2ac5ee+25,77a0ff+50,9e3ee2+75,e968b4+99 */
-  background: rgb(165,255,226); /* Old browsers */
-  background: -moz-linear-gradient(-45deg, rgba(165,255,226,1) 0%, rgba(42,197,238,1) 25%, rgba(119,160,255,1) 50%, rgba(158,62,226,1) 75%, rgba(233,104,180,1) 99%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, rgba(165,255,226,1) 0%,rgba(42,197,238,1) 25%,rgba(119,160,255,1) 50%,rgba(158,62,226,1) 75%,rgba(233,104,180,1) 99%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, rgba(165,255,226,1) 0%,rgba(42,197,238,1) 25%,rgba(119,160,255,1) 50%,rgba(158,62,226,1) 75%,rgba(233,104,180,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5ffe2', endColorstr='#e968b4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: rgb(165,255,226);
+ /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(165,255,226,1) 0%, rgba(42,197,238,1) 25%, rgba(119,160,255,1) 50%, rgba(158,62,226,1) 75%, rgba(233,104,180,1) 99%);
+ /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(165,255,226,1) 0%,rgba(42,197,238,1) 25%,rgba(119,160,255,1) 50%,rgba(158,62,226,1) 75%,rgba(233,104,180,1) 99%);
+ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(165,255,226,1) 0%,rgba(42,197,238,1) 25%,rgba(119,160,255,1) 50%,rgba(158,62,226,1) 75%,rgba(233,104,180,1) 99%);
+ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5ffe2', endColorstr='#e968b4',GradientType=1 );
+ /* IE6-9 fallback on horizontal gradient */
   padding-bottom: 32px;
 }
 
 .cards-holder {
   display: flex;
-  padding: 0px 72px;
   flex-direction: column;
+  padding: 0 72px;
 }
 
 .first-row {
@@ -416,15 +416,15 @@ h3 {
 
 .card {
   background-color: hsl(0, 0%, 92%);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.18);
   width: calc(33% - 69.33px);
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.18);
 }
 
 .card:hover {
   background-color: white;
-  transition: 200ms ease-in 0s;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.18);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.18);
   margin-top: -1px;
+  transition: 200ms ease-in 0s;
 }
 
 .card h3 {
@@ -442,8 +442,8 @@ h3 {
 }
 
 .catalog img {
-  width: 100%;
   opacity: 0.85;
+  width: 100%;
 }
 
 .catalog .software {
@@ -471,11 +471,11 @@ h3 {
 }
 
 .catalog h1 {
-  padding: 32px 0px;
-  text-align: center;
   color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.20);
   font-weight: lighter;
+  padding: 32px 0;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.20);
 }
 
 @media only screen and (max-width: 480px) {
@@ -484,8 +484,8 @@ h3 {
   }
 
   .catalog h1 {
-    padding-top: 32px;
     padding-bottom: 8px;
+    padding-top: 32px;
   }
 }
 
@@ -494,7 +494,7 @@ h3 {
 }
 
 .catalog .courses {
-  padding: 8px 0px;
+  padding: 8px 0;
 }
 
 .catalog .mobile {
@@ -507,8 +507,8 @@ h3 {
   }
 
   .catalog {
-    border-top: 1px solid;
     border-top-color: lightgrey;
+    border-top: 1px solid;
   }
 
   .catalog .mobile {
@@ -522,9 +522,9 @@ h3 {
 
   .element {
     background-color: white;
-    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.18);
     margin-top: 8px;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.18)
+    padding: 16px;
   }
 
   .catalog .software,
@@ -580,11 +580,11 @@ h3 {
 }
 
 .thesis .left .text {
-  padding: 0px 24px;
+  padding: 0 24px;
 }
 
 .thesis h1 {
-  padding: 32px 0px;
+  padding: 32px 0;
   text-align: center;
 }
 
@@ -609,8 +609,8 @@ h3 {
 
 .thesis .item img {
   align-self: center;
-  margin: 16px;
   height: auto;
+  margin: 16px;
   width: calc(35% - 11.2px);
 }
 
@@ -623,8 +623,8 @@ h3 {
 }
 
 .thesis a {
-  font-weight: normal;
   color: hsl(196, 100%, 58%);
+  font-weight: normal;
   text-decoration: none;
 }
 
@@ -638,8 +638,8 @@ h3 {
   }
 
   .thesis .mobile {
-    border-top: 1px solid;
     border-top-color: lightgrey;
+    border-top: 1px solid;
   }
 
   .thesis .mobile {
@@ -651,27 +651,27 @@ h3 {
   }
 
   .thesis video {
-    width: 100%;
     padding-bottom: 24px;
+    width: 100%;
   }
 }
 
 /* footer */
 footer {
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: space-between;
   margin-top: 32px;
   padding: 16px 24px;
-  background-color: hsl(0, 0%, 95%);
-  font-size: 0.8rem;
-  display: flex;
-  justify-content: space-between;
 }
 
 footer a {
-  color: #9e3ee2
+  color: #9e3ee2;
 }
 
 footer a:hover {
-  color: #2ac5ff
+  color: #2ac5ff;
 }
 
 @media only screen and (max-width: 480px) {
@@ -680,8 +680,8 @@ footer a:hover {
   }
 
   footer {
-    border-top: 0px;
+    border-top: 0;
+    margin-top: 0;
     padding: 16px 24px;
-    margin-top: 0px;
   }
 }
