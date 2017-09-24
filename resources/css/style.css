@@ -1,6 +1,8 @@
 /* universal */
 body {
   background-color: white;
+  font-family: "Open Sans", sans-serif;
+  color: #2e3d49;
 }
 
 html {
@@ -21,9 +23,27 @@ h3 {
 }
 
 .button {
-  background-color: darkgrey;
-  padding: 8px;
+  background-color: hsl(0, 0%, 92%);
+  padding: 15px;
   text-align: center;
+  color: hsl(222, 100%, 73%);
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  letter-spacing: 1.4px;
+}
+
+.button:hover {
+  color: hsl(196, 100%, 58%);
+  background-color: white;
+  transition: 200ms ease-in 0s;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.18);
+  margin-top: -1px;
+}
+
+a {
+  text-decoration: none;
+  align-self: center;
 }
 
 .strong {
@@ -35,7 +55,9 @@ h3 {
 }
 
 .left img {
-  padding: 32px 24px;
+  margin: 32px 24px;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.20);
 }
 
 .left video {
@@ -61,8 +83,6 @@ video {
   flex-direction: column;
 }
 
-
-
 /* header */
 header {
   width: 100%;
@@ -79,9 +99,27 @@ header .content {
   align-items: center;
 }
 
+.logo .purple {
+  display: none;
+}
+
+.logo:hover .purple {
+  display: inline;
+}
+
+.logo:hover .blue {
+  display: none;
+}
+
 header .content a {
   display: flex;
   align-items: center;
+  color: hsl(196, 100%, 58%);
+  text-decoration: none;
+}
+
+header .content a:hover {
+  color: hsl(275, 74%, 56%);
 }
 
 header .logo {
@@ -150,7 +188,23 @@ header .mobile {
 /* banner */
 .banner {
   display: flex;
-  background-color: lightgrey;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a5ffe2+0,2ac5ee+25,77a0ff+50,9e3ee2+75,e968b4+99 */
+background: rgb(165,255,226); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(165,255,226,1) 0%, rgba(42,197,238,1) 25%, rgba(119,160,255,1) 50%, rgba(158,62,226,1) 75%, rgba(233,104,180,1) 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(165,255,226,1) 0%,rgba(42,197,238,1) 25%,rgba(119,160,255,1) 50%,rgba(158,62,226,1) 75%,rgba(233,104,180,1) 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(165,255,226,1) 0%,rgba(42,197,238,1) 25%,rgba(119,160,255,1) 50%,rgba(158,62,226,1) 75%,rgba(233,104,180,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5ffe2', endColorstr='#e968b4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.banner h1,
+h3 {
+  color: white;
+  font-weight: lighter;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.20);
+}
+
+.banner a {
+  width: 40%;
 }
 
 .banner h3 {
@@ -195,9 +249,6 @@ header .mobile {
     font-weight: bold;
     margin-top: 24px;
     margin-bottom: 16px;
-  }
-
-  .button a {
     color: white;
     text-decoration: none;
   }
@@ -215,6 +266,20 @@ header .mobile {
 
 .testimonial h1 {
   padding-bottom: 24px;
+}
+
+.testimonial h3 {
+  color: #2e3d49;
+  text-shadow: none;
+}
+
+.testimonial a {
+  color: hsl(196, 100%, 58%);
+  text-decoration: none;
+}
+
+.testimonial a:hover {
+  color: hsl(275, 74%, 56%);
 }
 
 @media only screen and (max-width: 480px) {
@@ -238,11 +303,16 @@ header .mobile {
   border-bottom-color: lightgrey;
 }
 
+.testimonial .item:hover {
+}
+
 .item img {
   align-self: center;
-  padding: 16px;
+  margin: 16px;
   height: auto;
   width: calc(35% - 11.2px);
+  border-radius: 30px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.20);
 }
 
 .item .caption {
@@ -298,8 +368,13 @@ header .mobile {
 
 /* catalog */
 .catalog {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a5ffe2+0,2ac5ee+25,77a0ff+50,9e3ee2+75,e968b4+99 */
+  background: rgb(165,255,226); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(165,255,226,1) 0%, rgba(42,197,238,1) 25%, rgba(119,160,255,1) 50%, rgba(158,62,226,1) 75%, rgba(233,104,180,1) 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(165,255,226,1) 0%,rgba(42,197,238,1) 25%,rgba(119,160,255,1) 50%,rgba(158,62,226,1) 75%,rgba(233,104,180,1) 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(165,255,226,1) 0%,rgba(42,197,238,1) 25%,rgba(119,160,255,1) 50%,rgba(158,62,226,1) 75%,rgba(233,104,180,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5ffe2', endColorstr='#e968b4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   padding-bottom: 32px;
-  background-color: lightgrey;
 }
 
 .cards-holder {
@@ -326,17 +401,67 @@ header .mobile {
 }
 
 .card {
-  background-color: white;
+  background-color: hsl(0, 0%, 92%);
   width: calc(33% - 69.33px);
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.18);
+}
+
+.card:hover {
+  background-color: white;
+  transition: 200ms ease-in 0s;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.18);
+  margin-top: -1px;
+}
+
+.card h3 {
+  color: #2e3d49;
+  text-shadow: none;
+}
+
+.card a {
+  color: #2e3d49;
+}
+
+.card a:hover {
+  color: hsl(196, 100%, 58%);
+  transition: 200ms ease-in 0s;
 }
 
 .catalog img {
   width: 100%;
+  opacity: 0.85;
+}
+
+.catalog .software {
+  background-color: rgb(233, 104, 180);
+}
+
+.catalog .computer {
+  background-color: rgb(158, 62, 226);
+}
+
+.catalog .design {
+  background-color: rgb(134, 220, 243);
+}
+
+.catalog .data {
+  background-color: rgb(87, 175, 248);
+}
+
+.catalog .business {
+  background-color: rgb(69, 209, 235);
+}
+
+.catalog .marketing {
+  background-color: rgb(165, 255, 226);
 }
 
 .catalog h1 {
   padding: 32px 0px;
   text-align: center;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.20);
+  font-weight: lighter;
 }
 
 @media only screen and (max-width: 480px) {
@@ -420,9 +545,14 @@ header .mobile {
   flex-direction: row;
 }
 
+.thesis h3 {
+  color: #2e3d49;
+  text-shadow: none;
+}
+
 .thesis .item img {
   align-self: center;
-  padding: 16px;
+  margin: 16px;
   height: auto;
   width: calc(35% - 11.2px);
 }
@@ -433,6 +563,16 @@ header .mobile {
 
 .thesis .mobile {
   display: none;
+}
+
+.thesis a {
+  font-weight: normal;
+  color: hsl(196, 100%, 58%);
+  text-decoration: none;
+}
+
+.thesis a:hover {
+  color: hsl(275, 74%, 56%);
 }
 
 @media only screen and (max-width: 480px) {
@@ -462,13 +602,19 @@ header .mobile {
 /* footer */
 footer {
   margin-top: 32px;
-  background-color: white;
   padding: 16px 24px;
-  border-top: 1px solid;
-  border-top-color: lightgrey;
+  background-color: hsl(0, 0%, 95%);
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
+}
+
+footer a {
+  color: #9e3ee2
+}
+
+footer a:hover {
+  color: #2ac5ff
 }
 
 @media only screen and (max-width: 480px) {
